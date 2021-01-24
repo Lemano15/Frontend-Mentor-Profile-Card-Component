@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/** 
+TYPOGRAPHY
+**/
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-color: hsl(185, 75%, 39%);
+    background-position: -375px -550px, 600px 350px;
+    background-repeat: no-repeat;
+}
+
+h3 {
+    color: hsl(229, 23%, 23%);
+}
+
+p {
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1px;
+    font-size: .7rem;
+}
+
+
+.cardContainer {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 25px;
+    width: 375px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    
+}
+
+/** 
+SPACING
+**/
+
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/bg-pattern-card.svg);
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profileImg {
+    padding: 4em;
+}
+
+.biography {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em 1.5em 2em;
+    align-items: center;
+    background-color: white;
+}
+
+.credentials {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+span {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    margin-left: .3em;
+    font-size: 1.2rem;
+}
+
+.location {
+    margin-top: 1em;
+    letter-spacing: normal;
+}
+
+.profilePicture {
+    order: -1;
+    position: absolute;
+    border-radius: 55px;
+    margin: auto;
+    top: 50%;
+    bottom: 67%;
+    right: 0;
+    left: 0;
+    border: 5px solid white;
+}
+
+.cardStatistics {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5em 0;
+    padding-right: .8em;
+    border-top: 1px solid hsl(0, 0%, 59%);
+    background-color: white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.cardStatistics--block {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.cardStatistics--blockNumber {
+    text-transform: uppercase;
+    margin-bottom: .3em;
+}
+
+.attribution {
+    margin-top: 1em;
+}
